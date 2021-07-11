@@ -1,0 +1,7 @@
+1 - Think about user interface                                < how to deal with real user > 
+2 - Think about different test cases                          < validate your input > 
+   - think about wrong behavior by the user 
+3 - skeich the big picture of the program                     <don't write the code directly > 
+4 - Estimate the time needed for coding                       < parctise to learn this skill >  
+5 - Think about extra logic doesn't mentioned by the customer < suggest new ideas > 
+6 - Doing these steps avoid you cosuming the time 

@@ -41,6 +41,10 @@ public class GO {
             fw.write("I write to a file ");
             fw.write(5555);
             fw.close();//very very important
+         // using printWriter
+                PrintWriter pw = new PrintWriter(new File("printing.txt"));
+                pw.println("1@ali@1000 "); // note the seperator if wanted
+                pw.close(); // very important
 
        
 

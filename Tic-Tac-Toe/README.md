@@ -25,7 +25,7 @@ Structured Programin using C++
       * winner()
 ## Demo
 
-![](https://drive.google.com/file/d/1-FAxkMdoAOpTTcrLO79pbj9tdc_MBdeg/view?usp=sharing)
+![](https://github.com/Mohamad-Khalid/Projects/blob/main/Tic-Tac-Toe/demo.png)
 
 ## Issues
 Some bug fixes and organizing the code applied  

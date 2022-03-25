@@ -1,31 +1,3 @@
-/*
-//  - This is Tic-Tac-Toe game project version 1.0.0 
-  - Requirements : # Grid of N*N  
-                   # Player 1 and Player2 take turns
-                   # The player wins if the hole row or colomn or diagonal is the same character
-                   # Welcome message for the user when the game starts 
-                   # Message guides the user for Input 
-                   # Checking if the input is vlaid or not 
-                   # Message when a player wins the game 
-
-  -  Testing     : # natural behavior  row[1,3] col[1,3] 
-                   # wrong behavior    input character , numbers > N 
-                   # corner cases      right and left diagonal , there is no winner
-
- - Implementation: Structured Programin using C++ 
-                    main() 
-                      runGame()
-                        init()
-                        draw()
-                        play()
-                        winner()
-
- -   Issues     :  Some bug fixes and organizing the code applied  
-
-
-
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -36,7 +8,7 @@ char grid[N][N];
 // initiate the game 
 // fill the grid with '.'
 void init(){
-  cout << "\n\t\tThis is Tic-Tac-Toe game \n\n";
+  cout << "\n\t\tTic-Tac-Toe Game \n\n";
   cout << "There are two players x and O \n\n";
   for(int i=0; i<N ;++i)
     for(int j=0; j<N ; ++j)
@@ -47,7 +19,7 @@ void init(){
 // draw the grid for the player
 void draw(){
   for(int i=0; i<N ;++i){
-    cout <<"\t";
+    cout <<"\t\t";
     for(int j=0; j<N ; ++j)
       cout  << grid[i][j]<<' ';
     cout << endl;
@@ -101,9 +73,7 @@ bool winner(char role,int row ,int col){
 
 // Run the game 
 void runGame(){
-
   init();
-
   char player1='x',player2='o';
   int row , col , maxSteps=0;
   bool turn = 1;
@@ -111,13 +81,9 @@ void runGame(){
   while(true){
     ++maxSteps;
     char role = (turn? player1:player2);
-
     takeInput://lable to start again form here if the chosen cell is invlaid 
-
     cout << "Role of "<< char (toupper(role)) <<"  Enter Empty location (r,c)\n";
-
     draw();
-
     // Input vlaidation
     while(cin >> row >> col , cin.fail()){
       cout << "Invalid Input\n";
@@ -129,7 +95,6 @@ void runGame(){
 
     while(!play(role,row,col)) goto takeInput;
 
-
     if(winner(role , row , col)){
       draw();
       cout << char (toupper(role)) << " is the winner\n";
@@ -137,7 +102,6 @@ void runGame(){
     }
 
     turn=!turn;//to change the turn 
-
     if(maxSteps==N*N){ // if there is no winner the game finishs
       cout << "EQUAL !\n";
       break;

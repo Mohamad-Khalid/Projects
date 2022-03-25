@@ -23,6 +23,9 @@ Structured Programin using C++
       * draw()
       * play()
       * winner()
+## Demo
+
+![](https://drive.google.com/file/d/1-FAxkMdoAOpTTcrLO79pbj9tdc_MBdeg/view?usp=sharing)
 
 ## Issues
 Some bug fixes and organizing the code applied  
